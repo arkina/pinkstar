@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^([^/]*)/([^/]*)/$ /api/restservices.php?rquest=$1&mobile=$2 [L]
+RewriteRule ^([^/]*)/([^/]*)/([^/]*)/$ /api/restservices.php?rquest=$1&mobile=$2&token_id=$3 [L]
+</IfModule>
